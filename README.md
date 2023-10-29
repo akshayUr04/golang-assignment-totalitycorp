@@ -21,7 +21,7 @@ Follow the given steps to run and test assignment.
   ##### 1. Install dependencies
   ```bash
     ## Assuming you are in root of the project
-    cd ./ApiGateway && \
+    cd ./apigateway && \
     go mod tidy
   ```
 
@@ -44,7 +44,7 @@ Follow the given steps to run and test assignment.
   ##### 1. Install dependencies
   ```bash
     ## Assuming you are in root of the project
-    cd ./TotalityCorp-Service && \
+    cd ./totalitycorp-service && \
     go mod tidy
   ```
   ##### 2. Setup Env
@@ -72,4 +72,8 @@ Follow the given steps to run and test assignment.
    ##### 1.Get By Multiple IDs
    ![Alt text](./assets/getByIDs.png)
 
-  
+### Run Unit Test
+   ```bash
+     cd ./totalitycorp-service/pkg/service
+     go test
+  ```
