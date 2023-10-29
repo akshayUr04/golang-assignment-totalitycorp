@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  server:
+    image: akshayur/totalitycorp-server
+    ports:
+      - "8000:8000"
+    environment:
+      PORT : 0.0.0.0:8000
+  apigateway:
+    image: akshayur/totalitycorp-apigateway:v2
+    ports:
+      - "8001:8001"
+    environment:
+      PORT : 0.0.0.0:8001
+      USERSVCPORT : server:8000
+    depends_on:
+      - server
+   
