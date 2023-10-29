@@ -17,7 +17,7 @@ type UserServer struct {
 func (s *UserServer) GetUserById(ctx context.Context, req *pb.GetUserRequest) (*pb.User, error) {
 	users, ok := db[req.Id]
 	if !ok {
-		return nil, fmt.Errorf("no user coresponding to the given ID")
+		return nil, fmt.Errorf("user with ID %d not found", req.Id)
 	}
 	return &pb.User{
 		Id:      users.ID,

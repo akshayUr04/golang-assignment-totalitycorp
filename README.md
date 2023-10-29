@@ -68,8 +68,8 @@ Follow the given steps to run and test assignment.
   ```
 ### Test Application using Postman
    ##### 1.Get By ID
-   ![Alt text](getByID.png)
+   ![Alt text](./assets/getByID.png)
    ##### 1.Get By Multiple IDs
-   ![Alt text](getByIDs.png)
+   ![Alt text](./assets/getByIDs.png)
 
   
